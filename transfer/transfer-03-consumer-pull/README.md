@@ -75,16 +75,14 @@ order.
 To run the provider, just run the following command
 
 ```bash
-java -Dedc.fs.config=transfer/transfer-03-consumer-pull/resources/configuration/provider.properties \
-    -jar transfer/transfer-03-consumer-pull/provider-proxy-data-plane/build/libs/connector.jar
+java "-Dedc.fs.config=transfer/transfer-00-prerequisites/resources/configuration/provider-configuration.properties" -jar transfer/transfer-00-prerequisites/connector/build/libs/connector.jar
 ```
 
 To run the consumer, just run the following command (different terminal). Note that the consumer is the same that was built
 in the [prerequisites sample](../transfer-00-prerequisites)
 
 ```bash
-java -Dedc.fs.config=transfer/transfer-00-prerequisites/resources/configuration/consumer-configuration.properties \
-  -jar transfer/transfer-00-prerequisites/connector/build/libs/connector.jar
+java "-Dedc.fs.config=transfer/transfer-00-prerequisites/resources/configuration/consumer-configuration.properties" -jar transfer/transfer-00-prerequisites/connector/build/libs/connector.jar
 ```
 
 ### Negotiate the contract
